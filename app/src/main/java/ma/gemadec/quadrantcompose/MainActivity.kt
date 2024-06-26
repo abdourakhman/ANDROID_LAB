@@ -72,6 +72,9 @@ fun ComposeQuadrantApp() {
                 description = stringResource(R.string.info_composable_Image),
                 backgroundColor = Color(0xFFD0BCFF),
                 modifier = Modifier.weight(1f)
+                // Elle permet de distribuer l'espace disponible entre les enfants de manière proportionnelle.
+            //Par exemple, si vous avez deux composables dans une Row ou une Column, et que l'un a weight(1f)
+                // et l'autre weight(2f), // le premier composable prendra un tiers de l'espace disponible et le second prendra deux tiers.
             )
         }
         Row(Modifier.weight(1f)) {
